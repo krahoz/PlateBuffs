@@ -1,0 +1,75 @@
+------------------------------------------------------------------------
+r169 | cyprias | 2010-08-22 20:19:43 +0000 (Sun, 22 Aug 2010) | 2 lines
+Changed paths:
+   A /tags/1.5.0 (from /trunk:168)
+
+Tagged as 1.5.0.
+It's been awhile since I added/fixed anything. Might as well take it as release.
+------------------------------------------------------------------------
+r168 | cyprias | 2010-08-14 09:02:40 +0000 (Sat, 14 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Added more spells to show by default. Sprint, Dash, Swiftness Potion, Free Action Potion, Lesser Invisibility Potion, Invisibility Potion, Potion of Petrification, Indestructible Potion, Potion of Speed.
+------------------------------------------------------------------------
+r167 | cyprias | 2010-08-09 21:13:44 +0000 (Mon, 09 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/options.lua
+
+LibNameplate_CombatChange & LibNameplate_ThreatChange callbacks won't be registered unless Combat With NPC/Player is enabled. If the options are disabled, LibNameplate won't waste CPU cycles checking for combat/threat changes. 
+------------------------------------------------------------------------
+r165 | cyprias | 2010-08-09 20:23:03 +0000 (Mon, 09 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Pulling LibNP changes.
+------------------------------------------------------------------------
+r164 | cyprias | 2010-08-04 22:21:11 +0000 (Wed, 04 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Default profile should be "Default" instead of "Char - Server".
+------------------------------------------------------------------------
+r163 | cyprias | 2010-08-03 23:17:55 +0000 (Tue, 03 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Testing packager.
+------------------------------------------------------------------------
+r161 | cyprias | 2010-08-03 23:02:08 +0000 (Tue, 03 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Change to pull LibAuraInfo changes.
+------------------------------------------------------------------------
+r159 | cyprias | 2010-08-03 20:02:57 +0000 (Tue, 03 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+No change.
+------------------------------------------------------------------------
+r157 | cyprias | 2010-08-03 19:57:52 +0000 (Tue, 03 Aug 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Fixed question marks showing on NPCs not in combat. When a nameplate has threat we assume it's in combat. Sometimes a nameplate's threat is the previous owner of the nameplate. That is what was causing the question mark to appear. I'm now using LibNameplate's ThreatChanged callback to hide question marks if a NPC has no threat/combat.
+------------------------------------------------------------------------
+r155 | cyprias | 2010-07-26 20:55:53 +0000 (Mon, 26 Jul 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+Added tag: latest to LibNameplate & LibAuraInfo.
+------------------------------------------------------------------------
+r153 | cyprias | 2010-07-24 02:31:56 +0000 (Sat, 24 Jul 2010) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+Update to grab LibAuraInfo changes.
+------------------------------------------------------------------------
+r152 | cyprias | 2010-07-11 23:43:42 +0000 (Sun, 11 Jul 2010) | 1 line
+Changed paths:
+   M /trunk/options.lua
+
+Removed individual get/set functions from each option. (thanks Rabbit)
+------------------------------------------------------------------------
